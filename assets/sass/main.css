@@ -1,0 +1,26 @@
+.input-transparent {
+  border: 1px solid #ffffff21;
+  background-color: #ffffff21;
+  color: #ffffff;
+}
+
+.btn-transparent {
+  border: 1px solid #ffffff;
+  background-color: #ffffff3b;
+  color: #ffffff;
+}
+
+.btn-transparent:hover {
+  border: 1px solid #ffffff;
+  background-color: #0330c577;
+  color: #ffffff;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+.input-transparent:focus {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */

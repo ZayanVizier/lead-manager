@@ -1,0 +1,46 @@
+$colors: (
+    transparent-light: #ffffff21,
+    transparent-dark: #ffffff3b,
+    transparent: transparent,
+    white: #ffffff,
+    primary: #0330c577
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+
+%trasnsparent-input {
+    border: 1px solid color(transparent-light);
+    background-color: color(transparent-light);
+    color: color(white);
+  }
+
+%trasnsparent-button {
+    border: 1px solid color(white);
+    background-color: color(transparent-dark);
+    color: color(white);
+  }
+
+
+.input-transparent {
+@extend %trasnsparent-input;
+}  
+
+.btn-transparent {
+    @extend %trasnsparent-button;
+}
+
+.btn-transparent:hover {
+    border: 1px solid color(white);
+    background-color: color(primary);
+    color: color(white);
+    transition: ease-in 1s;
+}
+
+.input-transparent:focus {
+    border: 2px solid color(white);
+    background-color: color(transparent);
+    color: color(white);
+}
